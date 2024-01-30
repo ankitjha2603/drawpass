@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.webp" type="image/x-icon" />
+    <title>DrawPass: Visualize Password</title>
+    <!---------------------------------------------->
+    <!--SECTION: seo of page -->
+    <meta
+      name="description"
+      content="DrawPass transforms the way we create passwords by introducing a unique visual approach. Say farewell to complex alphanumeric strings and welcome an intuitive experience where users draw and arrange personalized patterns, creating secure yet memorable passwords. With DrawPass, security meets simplicity, providing a novel way to safeguard your digital accounts. Unleash your creativity and fortify your defenses with DrawPass - where drawing becomes your key to digital security."
+    />
+    <meta
+      name="keywords"
+      content="DrawPass, Password, security, github, javascript, html, css, firebase"
+    />
+    <meta name="author" content="ankitjha2603" />
+    <meta
+      property="og:title"
+      content="ReadSculpt : Crafting Futures from Past Pages"
+    />
+    <meta
+      property="og:description"
+      content="DrawPass transforms the way we create passwords by introducing a unique visual approach. Say farewell to complex alphanumeric strings and welcome an intuitive experience where users draw and arrange personalized patterns, creating secure yet memorable passwords. With DrawPass, security meets simplicity, providing a novel way to safeguard your digital accounts. Unleash your creativity and fortify your defenses with DrawPass - where drawing becomes your key to digital security."
+    />
+    <meta property="og:type" content="website" />
+    <link
+      rel="sitemap"
+      type="application/xml"
+      title="Sitemap"
+      href="https://ankitjha2603.github.io/ReadSculpt/sitemap.xml"
+    />
+    <meta
+      property="og:image"
+      content="https://ankitjha2603.github.io/drawpass/assets/brand/favicon.webp"
+    />
+    <meta
+      property="og:url"
+      content="https://ankitjha2603.github.io/drawpass/"
+    />
+    <meta name="theme-color" content="#008037" />
+    <!---------------------------------------------->
+
+    <!---------------------------------------------->
+    <!--SECTION: google tags -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-4J64SC1QY7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-4J64SC1QY7");
+    </script>
+    <!--Google verification--->
+    <meta
+      name="google-site-verification"
+      content="5QsjbXuM1buDwEtnxWDKN9dE1qgf_dgz646EdwUxSWg"
+    />
+    <!---------------------------------------------->
+    <!---------------------------------------------->
+    <!--SECTION: bootstrap css cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!---------------------------------------------->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="screen">
+      <div class="user-option">
+        <div class="create-option" focus="true" state="create">
+          Sign in
+        </div>
+        <div class="login-option" focus="false" state="login">
+          Login
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Username</label>
+        <input
+          type="text"
+          class="form-control"
+          id="username"
+          placeholder="Username"
+        />
+        <p class="warning" show="false">Username already exists or is empty</p>
+      </div>
+      <div class="mb-3">
+        <div class="info">
+          <code> &#9432; `Ctrl`</code>key for continuous coloring of blocks
+        </div>
+        <p class="warning-p">Color at least 5 blocks with at least 3 colors.</p>
+        <div class="get-password">
+          <div class="password"></div>
+          <div class="color-option-list">
+            <div class="color-option selected" color="White"></div>
+            <div class="color-option" color="#FF9933"></div>
+            <div class="color-option" color="#87CEEB"></div>
+            <div class="color-option" color="#128807"></div>
+            <div class="color-option" color="Yellow"></div>
+            <div class="color-option" color="Silver"></div>
+            <div class="color-option" color="Purple"></div>
+            <div class="color-option" color="Pink"></div>
+            <div class="color-option" color="Brown"></div>
+            <div class="color-option" color="Black"></div>
+            <div class="color-option" color="Red"></div>
+            <div class="color-option" color="Gray"></div>
+            <div class="color-option" color="blanchedalmond"></div>
+            <div class="color-option" color="Lightgreen"></div>
+            <div class="color-option" color="Gold"></div>
+            <div class="color-option" color="#D2B48C"></div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary submit-form" disabled>
+        Submit
+      </button>
+    </div>
+  </body>
+  <script src="script.js" type="module"></script>
+</html>

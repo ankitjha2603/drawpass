@@ -1,0 +1,172 @@
+/*----------------------------------------------*/
+/*SECTION: Variable and constant*/
+:root {
+    --basic-color: rgb(49.409485%, 85.099792%, 34.118652%);
+}
+
+/*----------------------------------------------*/
+
+/*----------------------------------------------*/
+/*SECTION: body*/
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    align-items: center;
+    background-color: #88888866;
+}
+
+/*----------------------------------------------*/
+
+/*----------------------------------------------*/
+/*SECTION: user option create or login*/
+.user-option {
+    display: flex;
+    font-weight: bold;
+}
+
+.user-option>div {
+    font-size: 1.3em;
+    margin: 5px 15px;
+    cursor: pointer;
+}
+
+.user-option>div[focus="true"] {
+    border-bottom: 3.5px solid var(--basic-color);
+}
+
+.user-option>div[focus="false"]:hover {
+    border-bottom: 3.5px solid #888888;
+}
+
+.passbox {
+    cursor: url('paint-brish.png'), auto;
+}
+
+/*----------------------------------------------*/
+
+
+/*----------------------------------------------*/
+/*SECTION: username and password input*/
+.screen {
+    padding: 10px 20px;
+    min-height: 80vh;
+    width: 80vw;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #969696, -20px -20px 60px #eeeeee;
+}
+
+.form-label {
+    font-size: 1.3em;
+    margin-top: 18px;
+    font-weight: 500;
+}
+
+code {
+    color: black;
+}
+
+.passbox {
+    background-color: white;
+    border: 1.25px solid #aaaaaa;
+    width: 25px;
+    height: 25px;
+    transition: background-color 0.5s
+}
+
+.passbox:hover {
+    border-width: 1.5px;
+    border-color: black;
+}
+
+.passline {
+    display: flex;
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+    border-width: 6px;
+    border-top-style: solid;
+    border-color: white;
+}
+
+.color-option-list {
+    display: flex;
+    width: 250px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: fit-content;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    margin: 4px 3px;
+    border: 2px solid;
+}
+
+.color-option.selected {
+    opacity: 1;
+}
+
+.color-option:not(.selected) {
+    opacity: 0.6;
+}
+
+.color-option:not(.selected):hover {
+    opacity: 0.85;
+}
+
+/*----------------------------------------------*/
+
+
+/*----------------------------------------------*/
+/*SECTION: media query*/
+
+@media only screen and (min-width: 768px) {
+    .get-password {
+        display: flex;
+    }
+
+    .color-option-list {
+        width: 80px;
+    }
+
+    .color-option {
+        margin: 0px 0px 2px 1px;
+    }
+}
+
+/*----------------------------------------------*/
+
+/*----------------------------------------------*/
+/*SECTION: warnig*/
+p.warning,
+p.warning-p {
+    margin: 1px 0px;
+    color: red;
+    font-weight: 400;
+    transition: opcacity 0.5s;
+    user-select: none;
+    opacity: 0.2;
+}
+
+p.warning-p {
+    font-size: 0.75em;
+    opacity: 0.05;
+}
+
+p.warning[show=true],
+p.warning-p[show=true] {
+    opacity: 1;
+}
+
+p.warning[show=false],
+p.warning-p[show=false] {
+    opacity: 0.2;
+}
+
+/*----------------------------------------------*/
